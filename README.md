@@ -1,2 +1,3 @@
 # DFE-DATA4
-Data Bootcamp
+
+This is a repository for code and files related to the DFE Data Bootcamp
