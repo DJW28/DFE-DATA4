@@ -250,30 +250,43 @@
 # added_number = (int),add_calc
 # print(added_number)
 
+#----------------------------Functions------------------------------------------
+
+# def calcgraderesult(int_hwscore, int_asscore, int_exmscore):
+#     result= (int(int_hwscore) + int(int_asscore) + int(int_exmscore)) / 175*100
+#     if int(result) >= 85:
+#             gradescore = "A"
+#     elif int(result) >= 70:
+#             gradescore = "B"
+#     elif int(result) >= 60:
+#             gradescore = "C"
+#     elif int(result) >= 50:
+#             gradescore = "D"
+#     elif int(result) >= 45:
+#             gradescore = "E"
+#     else:
+#             gradescore = "F"
+#     return result, gradescore
 
 
-def calcgraderesult(int_hwscore, int_asscore, int_exmscore):
-    result= (int(int_hwscore) + int(int_asscore) + int(int_exmscore)) / 175*100
-    if int(result) >= 85:
-            gradescore = "A"
-    elif int(result) >= 70:
-            gradescore = "B"
-    elif int(result) >= 60:
-            gradescore = "C"
-    elif int(result) >= 50:
-            gradescore = "D"
-    elif int(result) >= 45:
-            gradescore = "E"
-    else:
-            gradescore = "F"
-    return result, gradescore
+
+# studentname = input("Enter student name: ")
+# int_hwscore = input("Enter" + studentname + "'s homework score: ")
+# int_asscore = input("Enter" + studentname + "'s assessment score: ")
+# int_exmscore = input("Enter"+ studentname + "'s exam score: ")
+
+# graderesult = calcgraderesult(int_hwscore, int_asscore, int_exmscore)
+# print(studentname + " achieved Grade " + graderesult[1] + " (" + str(round(graderesult[0],2)) +").")
+
+# for temploopvar in [1,1]:
 
 
+item_list = ("burger","hotdog", "bun", "ketchup", "cheese")
+n=0
 
-studentname = input("Enter student name: ")
-int_hwscore = input("Enter" + studentname + "'s homework score: ")
-int_asscore = input("Enter" + studentname + "'s assessment score: ")
-int_exmscore = input("Enter"+ studentname + "'s exam score: ")
+while n<5:
+    for i in item_list:
+        print(item_list(i))
 
-graderesult = calcgraderesult(int_hwscore, int_asscore, int_exmscore)
-print(studentname + " achieved Grade " + graderesult[1] + " (" + str(round(graderesult[0],2)) +").")
+
+print(item_list(5))
