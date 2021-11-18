@@ -281,12 +281,65 @@
 # for temploopvar in [1,1]:
 
 
-item_list = ("burger","hotdog", "bun", "ketchup", "cheese")
-n=0
-
-while n<5:
-    for i in item_list:
-        print(item_list(i))
 
 
-print(item_list(5))
+# from _typeshed import SupportsNoArgReadline
+# from types import MappingProxyType
+
+
+# item_list = ["burger","hotdog", "bun", "ketchup", "cheese"]
+# n=0
+
+# while n<5:
+#     for i in item_list:
+#         print(item_list[i])
+
+
+# print(item_list[5])
+
+
+# classes
+
+# class Student:
+
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+
+
+    
+# John = Student("John", "21", "2")
+# Jane = Student("Jane", "22", "1")
+
+
+
+# print(getattr(John, "age", "set"))
+
+    #self.claset = claset
+
+    # John = Student("John", "21")
+    # Jane = Student("Jane", "22")
+    # Marq = Student("Marq","22","3")
+    # Var = Student("Var","23","4")
+    # Tar = Student("Tar","17","1")
+    # Van = Student("Van","21","1")
+    # Lumen = Student("Lumen","20","2")
+    # Cumin = Student("Cumin","19","2")
+    # Daw = Student("Daw","20","3")
+    # Arn = Student("Arn","24","4")
+
+    # s1 = Student
+    # print(s1.name)
+    
+    #print(getattr("John", "age"))
+
+
+#Student = {
+
+#}
+
+
+#    studentname = input("Enter student name: ")
+# int_hwscore = input("Enter" + studentname + "'s homework score: ")
+# int_asscore = input("Enter" + studentname + "'s assessment score: ")
+# int_exmscore = input("Enter"+ studentname + "'s exam score: ")
