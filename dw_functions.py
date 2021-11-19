@@ -31,3 +31,11 @@ def alphchecker(letter):
     else:
         print(letter,"is a Consonant")
 
+
+#======find shape from input of sides
+def whatshape(sides):
+    
+    if sides in shapename:
+        return shapename.get(sides) 
+    if sides < 3 or >10:
+        print("Invalid number of sides, Please Try again")

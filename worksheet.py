@@ -67,45 +67,71 @@
     # "triangle" : "isocoles",
     # "quadrilateral" : "sqaure"
 
+# numofsides = input()
 
-shapename = {
-"3" : "isocoles",
-"4" : "sqaure",
-"5" : "pentagon",
-"6" : "hexagon",
-"7" : "heptagon",
-"8" : "octagon",
-"9" : "nonagon",
-"10" : "decagon"    
-}
+# sides = numofsides 
+# shapename = { "3" : "isosceles",
+# "4" : "sqaure",
+# "5" : "pentagon",
+# "6" : "hexagon",
+# "7" : "heptagon",
+# "8" : "octagon",
+# "9" : "nonagon",
+# "10" : "decagon"    
+# }
+
+# #print(shapename.items())
 
 
 
-# shapes = (monogon01,bigon2,triangle3,quadrilateral4,pentagon5,hexagon6,heptagon7,octagon8,nonagon9,decagon10)
 
 
-sides = int(input("Enter how many sides: "))
 
-def whatshape(sides):
-    if sides in shapename:
-        return shapename.get(sides)
-    elif sides <= 3 or 10:
-        print("Invalid number of sides, Please Try again")
+
+
+# # shapes = (monogon01,bigon2,triangle3,quadrilateral4,pentagon5,hexagon6,heptagon7,octagon8,nonagon9,decagon10)
+
+# error = "Invalid number of sides, Please Try again"
+# sides = str(input("Enter how many sides:"))
+
+# def whatshape(sides):
+    
+#     if sides not in shapename:
+#         print("error") 
+#     elif sides in shapename:
+#         return shapename.get(sides)
 
     
+# print(shapename.get(sides))
+
+    # shapes = (monogon01,bigon2,triangle3,quadrilateral4,pentagon5,hexagon6,heptagon7,octagon8,nonagon9,decagon10)
 
 
-    
 
 
+# # print("Invalid number of sides, Please Try again")
 
-
-
-print(shapename.get(sides))
 
 # <3 or >10
 # print("Invalid number of sides, Please try again")
 
 
 #===========Exercise 40============
-int(input("Side length 1",
+tside1 = int(input("Enter 1st side length: "))
+tside2 = int(input("Enter 2nd side length: "))
+tside3 = int(input("Enter 3rd side length: "))
+Scalene = "Your Triangle is a Scalene triangle"
+Isosceles = "Your Triangle is an Isosceles triangle"
+Equilateral = "Your Triangle is an Equilateral triangle"
+
+def tricalc(tside1,tside2,tside3):
+    if tside1 == tside2 and tside1 or tside2 != tside3:
+        return(Isosceles)
+    if tside1 == tside2 and tside1 == tside3 and tside2 == tside3:
+        return(Equilateral)
+    if tside1 != tside2 and tside1 != tside3 and tside2 != tside3:
+        return(Scalene)
+
+
+
+tricalc.
