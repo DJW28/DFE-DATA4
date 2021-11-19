@@ -343,3 +343,30 @@
 # int_hwscore = input("Enter" + studentname + "'s homework score: ")
 # int_asscore = input("Enter" + studentname + "'s assessment score: ")
 # int_exmscore = input("Enter"+ studentname + "'s exam score: ")
+
+myfile = open('README.md')
+chars = myfile.readlines()
+myfile.close()
+
+chars.insert(2,"I like flies\n")
+chars.append("\nCheese is pretty good to eat\n")
+print(chars)
+output = "".join(chars)
+
+myfile = open('README.md', mode='w')
+myfile.write(output)
+myfile.close()
+
+
+
+
+# teams = ["NO","BRO","Hoopshafjord","hahahaha","nowwayFC"]
+
+# with open("teams.txt", "w") as file:
+#     for i in teams:
+#         newline = str(i)
+#         file.write(newline + "\n")
+
+# with open("teams.txt", "r") as file:
+#     print(file.read())
+#     print(file.read())

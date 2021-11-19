@@ -1,5 +1,5 @@
-import pdb     
-pdb.set_trace()
+# import pdb     
+# pdb.set_trace()
 #=================
 
 # EXERCISE  34----Even or Odd
@@ -69,14 +69,14 @@ pdb.set_trace()
 
 
 shapename = {
-    "3" : "isocoles",
-    "4" : "sqaure",
-    "5" : "pentagon",
-    "6" : "hexagon",
-    "7" : "heptagon",
-    "8" : "octagon",
-    "9" : "nonagon",
-    "10" : "decagon"    
+"3" : "isocoles",
+"4" : "sqaure",
+"5" : "pentagon",
+"6" : "hexagon",
+"7" : "heptagon",
+"8" : "octagon",
+"9" : "nonagon",
+"10" : "decagon"    
 }
 
 
@@ -84,12 +84,13 @@ shapename = {
 # shapes = (monogon01,bigon2,triangle3,quadrilateral4,pentagon5,hexagon6,heptagon7,octagon8,nonagon9,decagon10)
 
 
-sides = int(input("Enter how many sides"))
+sides = int(input("Enter how many sides: "))
 
 def whatshape(sides):
-    if sides is x in shapename:
+    if sides in shapename:
         return shapename.get(sides)
-    elif sides is < = 3 or 10:
+    elif sides <= 3 or 10:
+        print("Invalid number of sides, Please Try again")
 
     
 
@@ -105,3 +106,6 @@ print(shapename.get(sides))
 # <3 or >10
 # print("Invalid number of sides, Please try again")
 
+
+#===========Exercise 40============
+int(input("Side length 1",
